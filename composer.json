@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "twithers/laravel-team-notification-settings",
+    "description": "Allow every user belonging to a team/company/account customize individual notification settings. Send notifications to the team and have it dispatch the notification to all users subscribed to that specific notification. Customize specific notification requirements and thresholds (alert when over 90% for user A, 75% for user B, and do not notify user C).",
     "keywords": [
-        ":vendor_name",
+        "Tim Withers",
         "laravel",
-        ":package_slug"
+        "laravel-team-notification-settings"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/twithers/laravel-team-notification-settings",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Tim Withers",
+            "email": "timothy.withers@gmail.com",
             "role": "Developer"
         }
     ],
@@ -35,19 +35,19 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "TimWithers\\TeamNotificationSettings\\": "src/",
+            "TimWithers\\TeamNotificationSettings\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/",
+            "TimWithers\\TeamNotificationSettings\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
     "scripts": {
         "post-autoload-dump": "@composer run prepare",
-        "clear": "@php vendor/bin/testbench package:purge-skeleton --ansi",
+        "clear": "@php vendor/bin/testbench package:purge-laravel-team-notification-settings --ansi",
         "prepare": "@php vendor/bin/testbench package:discover --ansi",
         "build": [
             "@composer run prepare",
@@ -73,10 +73,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "TimWithers\\TeamNotificationSettings\\TeamNotificationSettingsServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "TeamNotificationSettings": "TimWithers\\TeamNotificationSettings\\Facades\\TeamNotificationSettings"
             }
         }
     },

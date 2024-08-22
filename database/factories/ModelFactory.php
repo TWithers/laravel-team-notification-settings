@@ -1,6 +1,6 @@
 <?php
 
-namespace VendorName\Skeleton\Database\Factories;
+namespace TimWithers\TeamNotificationSettings\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 

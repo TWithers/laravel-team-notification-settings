@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace TimWithers\TeamNotificationSettings\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class TeamNotificationSettingsCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-team-notification-settings';
 
     public $description = 'My command';
 

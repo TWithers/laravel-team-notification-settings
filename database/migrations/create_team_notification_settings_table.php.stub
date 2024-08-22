@@ -1,0 +1,27 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    public function up()
+    {
+        Schema::create('notification_settings', function (Blueprint $table) {
+            $table->id();
+            $table->unsignedInt('team_id');
+            $table->unsignedInt('user_id');
+            $table->string('notification');
+            $table->json('config')->nullable();
+            $table->boolean('mail_delivery')->default(true);
+            $table->boolean('sms_delivery')->default(false);
+            $table->timestamps();
+        });
+    }
+
+    public function down()
+    {
+        Schema::dropIfExists('notification_settings');
+    }
+};
