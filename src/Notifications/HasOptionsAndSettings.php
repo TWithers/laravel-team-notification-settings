@@ -23,8 +23,6 @@ trait HasOptionsAndSettings
         return true;
     }
 
-
-
     /**
      * Method used to check if notification has stored settings.
      * Without stored settings, every team user will receive the notification.

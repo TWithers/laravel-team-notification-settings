@@ -9,7 +9,6 @@ use TimWithers\TeamNotificationSettings\Notifications\TeamNotification;
 
 class NotificationSetting extends Model
 {
-
     protected $casts = [
         'mail_delivery' => 'boolean',
         'sms_delivery' => 'boolean',
